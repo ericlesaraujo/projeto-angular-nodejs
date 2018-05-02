@@ -1,0 +1,14 @@
+<font face="Verdana">
+<h3>{{title}}</h3>
+<input type="text" maxlength="10" [(ngModel)]="task">
+<button type="button" (click)="add()">adicionar</button>
+<ul>
+    <li *ngFor="let item of tasks">
+        {{item}}
+    </li>
+</ul>
+		<font size="2">
+			<p>A primeira aplicação consiste em adicionar uma palavra no campo acima. Quando o botão "adicionar" é clicado, o que foi digitado é adicionado
+			a uma lista. Importante enfatizar que a aplicação ainda sofrerá alguns ajustes...</p>
+		</font>
+</font>
